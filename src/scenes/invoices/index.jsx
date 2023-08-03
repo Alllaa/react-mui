@@ -51,10 +51,6 @@ const Invoices=()=>{
             borderTop:"none",
             backgroundColor:colors.blueAccent[700]
         },
-        "& .MuiDataGrid-footerContainer":{
-            borderTop:"none",
-            backgroundColor:colors.blueAccent[700]
-        },
         "& .MuiCheckbox-root":{
             color:`${colors.greenAccent[200]} !important`
         },

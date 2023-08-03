@@ -48,6 +48,11 @@ const SidebarCustom = () => {
     return (
         <Box
             sx={{
+                "& .pro-sidebar":{
+                    // position:"fixed",
+                    // display:"flex",
+                    // height:"300%x%"
+                },
                 "& .pro-sidebar-inner": {
                     background: `${colors.primary[400]} !important`,
                 },
@@ -63,9 +68,13 @@ const SidebarCustom = () => {
                 "& .pro-menu-item.active": {
                     color: "#6870fa !important",
                 },
+              
             }}
         >
-            <ProSidebar collapsed={isCollapsed}>
+            <ProSidebar 
+                collapsed={isCollapsed}
+
+            >
                 <Menu iconShape='square'>
                     {/* LOGO AND MENU ICON */}
 
@@ -74,7 +83,7 @@ const SidebarCustom = () => {
                         icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
                         style={{
                             margin: "10px 0 20px 0",
-                            color: colors.grey[100]
+                            color: colors.grey[100],
                         }}
                     >
                         {!isCollapsed && (
